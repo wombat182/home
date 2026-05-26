@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Visit Dønna — Helgelandskysten</title>
-<meta name="description" content="Din guide til Dønna på Helgelandskysten. Dønnamannen, Dønnes kirke, Dønnesfjellet, transport, drosje og SUP-utleie.">
+<title>Dønna — Helgelandskysten</title>
+<meta name="description" content="Din guide til Dønna på Helgelandskysten: artikler, turruter, lokale bedrifter, praktisk info og ting til leie.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
@@ -139,6 +139,25 @@
   .reveal-up{opacity:0;transform:translateY(40px);transition:opacity 1.1s cubic-bezier(.16,1,.3,1),transform 1.1s cubic-bezier(.16,1,.3,1)}
   .reveal-up.in{opacity:1;transform:translateY(0)}
 
+
+
+  .soon{display:inline-block;margin-left:.55rem;padding:.18rem .5rem;border:1px solid rgba(184,153,104,.35);color:var(--gold);font-size:.55rem;letter-spacing:.18em;text-transform:uppercase;vertical-align:middle}
+  .section-link{display:inline-flex;align-items:center;gap:.6rem;color:var(--gold);text-decoration:none;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;margin-top:auto}
+  .section-link:hover{text-decoration:underline}
+  .page-hero{padding:12rem 3rem 6rem;border-top:none;background:linear-gradient(180deg,rgba(10,15,18,.35),var(--abyss));}
+  .page-hero .wrap{max-width:1280px;margin:0 auto}
+  .page-hero h1{font-size:clamp(3rem,8vw,6.5rem);max-width:850px;margin-bottom:1.5rem}
+  .page-hero p{max-width:680px;color:var(--bone-dim);font-size:1.1rem}
+  .text-block{max-width:760px;color:var(--bone-dim);font-size:1.02rem}
+  .text-block p{margin-bottom:1.3rem}
+  .text-block strong{color:var(--bone);font-weight:400}
+  .brain-list{display:grid;grid-template-columns:repeat(2,1fr);gap:2.5rem}
+  .brain-list ul{list-style:none;border:1px solid var(--line);padding:2rem}
+  .brain-list li{border-bottom:1px solid var(--line);padding:.75rem 0;color:var(--bone-dim);font-size:.92rem}
+  .brain-list li:last-child{border-bottom:none}
+  .brain-list b{color:var(--bone);font-weight:400}
+  @media(max-width:900px){.page-hero{padding:9rem 1.5rem 4rem}.brain-list{grid-template-columns:1fr}}
+
   @media(max-width:900px){
     .nav-links{display:none}
     .nav-inner{padding:0 1.5rem}
@@ -157,13 +176,13 @@
 
 <nav id="nav">
   <div class="nav-inner">
-    <a href="#" class="logo">Dønna</a>
+    <a href="index.html" class="logo">Dønna</a>
     <ul class="nav-links">
-      <li><a href="#se">Severdigheter</a></li>
-      <li><a href="#artikler">Artikler</a></li>
-      <li><a href="#donnamannen">Dønnamannen</a></li>
-      <li><a href="#sup">Leie SUP</a></li>
-      <li><a href="#praktisk">Praktisk</a></li>
+      <li><a href="opplev/">Opplev</a></li>
+      <li><a href="turruter/">Turruter</a></li>
+      <li><a href="lei/">Lei</a></li>
+      <li><a href="bedrifter/">Bedrifter</a></li>
+      <li><a href="planlegg/">Planlegg</a></li>
     </ul>
   </div>
 </nav>
@@ -175,10 +194,62 @@
     <p class="eyebrow reveal-up in">Helgelandskysten · 66° nord</p>
     <h1 class="reveal-up in">Velkommen<br>til <em>Dønna.</em></h1>
     <p class="hero-sub reveal-up in">Øya der havet, fjellet og historien møtes. Din guide til Dønnamannen, kysten og alt det praktiske — laget av folk som bor her.</p>
-    <a href="#se" class="btn reveal-up in"><span>Utforsk øya</span></a>
+    <a href="#struktur" class="btn reveal-up in"><span>Utforsk øya</span></a>
   </div>
   <div class="scroll-hint">Bla ned</div>
 </header>
+
+
+<!-- Site structure -->
+<section id="struktur">
+  <div class="wrap">
+    <div class="sec-head reveal-up">
+      <p class="eyebrow">Start her</p>
+      <h2>Dønna samlet på ett sted</h2>
+      <p class="lead">Informasjon, turruter, lokale bedrifter og ting til leie. Folk på Dønna har ting. Turister mangler ting. Dette er stedet som skal koble dem.</p>
+    </div>
+    <div class="cards">
+      <a class="card reveal-up" href="opplev/" style="text-decoration:none;color:inherit">
+        <span class="tag">Informasjon</span>
+        <h3>Opplev Dønna</h3>
+        <p>Artikler, severdigheter, historie og steder verdt å stoppe ved.</p>
+        <span class="section-link">Åpne</span>
+      </a>
+      <a class="card reveal-up" href="turruter/" style="text-decoration:none;color:inherit">
+        <span class="tag">Ruter</span>
+        <h3>Turruter</h3>
+        <p>Fjellturer, sykkelruter, padling, korte turer og etter hvert kart.</p>
+        <span class="section-link">Åpne</span>
+      </a>
+      <a class="card reveal-up" href="lei/" style="text-decoration:none;color:inherit">
+        <span class="tag">Utleie</span>
+        <h3>Lei på Dønna</h3>
+        <p>SUP, kajakk, telt — og senere sykkel, bil, båt, hus, campingvogn og mer.</p>
+        <span class="section-link">Åpne</span>
+      </a>
+    </div>
+    <div class="cards" style="margin-top:2.5rem">
+      <a class="card reveal-up" href="bedrifter/" style="text-decoration:none;color:inherit">
+        <span class="tag">Lokalt <span class="soon">Kommer snart</span></span>
+        <h3>Bedrifter</h3>
+        <p>Mat, overnatting, transport, opplevelser, gårder og tjenester på Dønna.</p>
+        <span class="section-link">Åpne</span>
+      </a>
+      <a class="card reveal-up" href="planlegg/" style="text-decoration:none;color:inherit">
+        <span class="tag">Praktisk</span>
+        <h3>Planlegg turen</h3>
+        <p>Ferge, hurtigbåt, barn, dårlig vær, sykkel, dagstur og praktisk informasjon.</p>
+        <span class="section-link">Åpne</span>
+      </a>
+      <div class="card reveal-up">
+        <span class="tag">Kart <span class="soon">Kommer snart</span></span>
+        <h3>Kart over Dønna</h3>
+        <p>Et fremtidig kart med ruter, parkering, toaletter, utsiktspunkt, bedrifter og ting til leie.</p>
+        <span class="section-link">Kommer snart</span>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Attractions -->
 <section id="se">
@@ -365,12 +436,102 @@
           <span><span>Lesetid</span><b>4–7 min</b></span>
         </div>
       </a>
+    </div>
+
+    <div class="cards" style="margin-top:2.5rem">
+      <a class="card reveal-up" href="artikler/donna-med-sykkel.html" style="text-decoration:none;color:inherit">
+        <span class="tag">Sykkel</span>
+        <h3>Dønna med sykkel</h3>
+        <p>Guide til å oppleve Dønna med sykkel: landeveier, ferger, utsikt og rolige stopp.</p>
+        <div class="meta">
+          <span><span>Type</span><b>Ruter</b></span>
+          <span><span>Lesetid</span><b>4–7 min</b></span>
+        </div>
+      </a>
+      <a class="card reveal-up" href="artikler/donna-med-barn.html" style="text-decoration:none;color:inherit">
+        <span class="tag">Familie</span>
+        <h3>Dønna med barn</h3>
+        <p>Familievennlig guide til Dønna med barn: korte turer, utsikt, historie, bading og rolige stopp.</p>
+        <div class="meta">
+          <span><span>Type</span><b>Lav terskel</b></span>
+          <span><span>Lesetid</span><b>4–7 min</b></span>
+        </div>
+      </a>
+      <a class="card reveal-up" href="artikler/donna-i-darlig-vaer.html" style="text-decoration:none;color:inherit">
+        <span class="tag">Vær</span>
+        <h3>Dønna i dårlig vær</h3>
+        <p>Hva du kan gjøre på Dønna når været ikke spiller på lag: kultur, korte stopp, utsikt og kyststemning.</p>
+        <div class="meta">
+          <span><span>Type</span><b>Rolige dager</b></span>
+          <span><span>Lesetid</span><b>4–7 min</b></span>
+        </div>
+      </a>
+    </div>
+    <div class="cards" style="margin-top:2.5rem">
+      <a class="card reveal-up" href="artikler/badeplasser-pa-donna.html" style="text-decoration:none;color:inherit">
+        <span class="tag">Sommer</span>
+        <h3>Badeplasser på Dønna</h3>
+        <p>Guide til bading på Dønna: hva du bør se etter, hvordan velge trygge steder og hva som gjør kystbading spesielt her.</p>
+        <div class="meta">
+          <span><span>Type</span><b>Bading</b></span>
+          <span><span>Lesetid</span><b>4–7 min</b></span>
+        </div>
+      </a>
+      <a class="card reveal-up" href="artikler/fotosteder-pa-donna.html" style="text-decoration:none;color:inherit">
+        <span class="tag">Foto</span>
+        <h3>Fotosteder på Dønna</h3>
+        <p>De beste motivene på Dønna: Dønnamannen, Dønnesfjellet, kystlys, gamle handelssteder og utsikt mot Helgeland.</p>
+        <div class="meta">
+          <span><span>Type</span><b>Utsikt</b></span>
+          <span><span>Lesetid</span><b>4–7 min</b></span>
+        </div>
+      </a>
+      <a class="card reveal-up" href="artikler/kajakk-og-padling-pa-donna.html" style="text-decoration:none;color:inherit">
+        <span class="tag">Padling</span>
+        <h3>Kajakk og padling på Dønna</h3>
+        <p>Guide til padling på Dønna: skjærgård, vær, sikkerhet og hvordan du tenker før du går på vannet.</p>
+        <div class="meta">
+          <span><span>Type</span><b>Hav</b></span>
+          <span><span>Lesetid</span><b>4–7 min</b></span>
+        </div>
+      </a>
+    </div>
+    <div class="cards" style="margin-top:2.5rem">
+      <a class="card reveal-up" href="artikler/havfiske-pa-donna.html" style="text-decoration:none;color:inherit">
+        <span class="tag">Fiske</span>
+        <h3>Havfiske på Dønna</h3>
+        <p>Informasjon om havfiske på Dønna: landskap, sesongfølelse, sikkerhet og respekt for regler.</p>
+        <div class="meta">
+          <span><span>Type</span><b>Kyst</b></span>
+          <span><span>Lesetid</span><b>4–7 min</b></span>
+        </div>
+      </a>
       <a class="card reveal-up" href="artikler/hvorfor-heter-det-donna.html" style="text-decoration:none;color:inherit">
         <span class="tag">Navn</span>
         <h3>Hvorfor heter det Dønna?</h3>
-        <p>Navnet Dønna kan knyttes til dønninger, dun, øy-navn og sørsamiske tolkninger.</p>
+        <p>Kort forklaring av navnet Dønna, med norrøne, samiske og lokale tolkninger.</p>
         <div class="meta">
-          <span><span>Type</span><b>Bakgrunn</b></span>
+          <span><span>Type</span><b>Historie</b></span>
+          <span><span>Lesetid</span><b>4–7 min</b></span>
+        </div>
+      </a>
+      <a class="card reveal-up" href="artikler/bjornsmartnan.html" style="text-decoration:none;color:inherit">
+        <span class="tag">Kystmarked</span>
+        <h3>Bjørnsmartnan</h3>
+        <p>Guide til Bjørnsmartnan på Dønna: historien om kystmarkedet, handelen og stedet Bjørn.</p>
+        <div class="meta">
+          <span><span>Type</span><b>Kultur</b></span>
+          <span><span>Lesetid</span><b>4–7 min</b></span>
+        </div>
+      </a>
+    </div>
+    <div class="cards" style="margin-top:2.5rem">
+      <a class="card reveal-up" href="artikler/lokta-og-vandve.html" style="text-decoration:none;color:inherit">
+        <span class="tag">Øyer</span>
+        <h3>Løkta og Vandve</h3>
+        <p>Kort guide til Løkta og Vandve, to av øyene som gir Dønna kommune mer enn bare hovedøya.</p>
+        <div class="meta">
+          <span><span>Type</span><b>Øyhopping</b></span>
           <span><span>Lesetid</span><b>4–7 min</b></span>
         </div>
       </a>
