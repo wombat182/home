@@ -14,3 +14,6 @@ Statisk nettside for Dønna på GitHub Pages.
 - `flyer-sup.html` — hvit A5-flyer for SUP-utleie
 
 Ingen `CNAME` er inkludert. Siden peker derfor ikke til eget domene ennå.
+
+
+Oppdatert: v5 har forbedret turplanlegger med natur-, vær-, vind-, transport- og utstyrslogikk. Ingen CNAME.
