@@ -50,11 +50,11 @@
     transition:transform .5s ease,background .5s ease,padding .5s ease}
   nav.scrolled{background:rgba(10,15,18,.88);backdrop-filter:blur(12px);padding:1.1rem 0;border-bottom:1px solid var(--line)}
   .nav-inner{max-width:1280px;margin:0 auto;padding:0 3rem;display:flex;justify-content:space-between;align-items:center}
-  .logo{font-family:var(--display);font-size:1.4rem;color:var(--bone);text-decoration:none;
-    letter-spacing:.3em;text-transform:uppercase;padding-left:.3em}
+  .logo{font-family:var(--display);font-size:1.4rem;color:#fff;text-decoration:none;
+    letter-spacing:.3em;text-transform:uppercase;padding-left:.3em;text-shadow:0 1px 10px rgba(0,0,0,.55)}
   .nav-links{list-style:none;display:flex;gap:2.6rem;align-items:center}
-  .nav-links a{color:var(--bone-dim);text-decoration:none;font-size:.72rem;letter-spacing:.2em;
-    text-transform:uppercase;transition:color .4s}
+  .nav-links a{color:#fff;text-decoration:none;font-size:.72rem;letter-spacing:.2em;
+    text-transform:uppercase;transition:color .4s;text-shadow:0 1px 10px rgba(0,0,0,.55)}
   .nav-links a:hover{color:var(--bone)}
 
   /* Hero */
@@ -169,6 +169,17 @@
     .rental-items{grid-template-columns:1fr}
     .scroll-hint{display:none}
   }
+
+  .ferry-feature{background:linear-gradient(180deg,var(--deep),var(--abyss));border-top:1px solid rgba(184,153,104,.22)}
+  .ferry-card{border:1px solid rgba(184,153,104,.38);padding:2.6rem;display:grid;grid-template-columns:1.2fr .8fr;gap:2.5rem;align-items:center;background:rgba(184,153,104,.045)}
+  .ferry-card h2{font-size:clamp(2rem,4vw,3.2rem);margin:.4rem 0 1rem}
+  .ferry-card p{color:var(--bone-dim);max-width:650px}
+  .ferry-meta{display:grid;gap:.8rem}
+  .ferry-meta div{border-bottom:1px solid var(--line);padding-bottom:.8rem;display:flex;justify-content:space-between;gap:1rem;font-size:.9rem}
+  .ferry-meta span:first-child{color:var(--bone-dim)}
+  .ferry-meta span:last-child{color:var(--bone);text-align:right}
+  @media(max-width:900px){.ferry-card{grid-template-columns:1fr;padding:2rem}}
+
 </style>
 </head>
 <body>
@@ -192,6 +203,25 @@
     <p>Ferge, hurtigbåt, praktiske guider, vær, barn, sykkel og dagsturer på Dønna.</p>
   </div>
 </header>
+
+<section class="ferry-feature" id="fergerute">
+  <div class="wrap">
+    <div class="ferry-card reveal-up">
+      <div>
+        <p class="eyebrow">Gjeldende fergerute</p>
+        <h2>Sandnessjøen - Bjørn (Dønna) - Løkta</h2>
+        <p>Last ned rute 18-181 for ferja. Sjekk alltid offisiell reiseplanlegger ved helligdager, vær og driftsendringer.</p>
+        <a href="../assets/fergerute-sandnessjoen-donna-lokta-2026.pdf" class="btn" style="margin-top:1.7rem"><span>Last ned fergerute</span></a>
+      </div>
+      <div class="ferry-meta">
+        <div><span>Rute</span><span>18-181</span></div>
+        <div><span>Strekning</span><span>Sandnessjøen - Bjørn - Løkta</span></div>
+        <div><span>Gyldig</span><span>07.04.2026 - 31.01.2027</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section><div class="wrap"><div class="sec-head reveal-up"><p class="eyebrow">Praktisk</p><h2>Planlegg turen</h2><p class="lead">Alt som hjelper folk før de kommer: transport, vær, barn, sykkel, dagstur og praktiske valg.</p></div><div class="cards" style="margin-top:2.5rem"><a class="card reveal-up" href="../artikler/slik-kommer-du-deg-til-donna.html" style="text-decoration:none;color:inherit"><span class="tag">Klar</span>
         <h3>Slik kommer du deg til Dønna</h3>
         <p>Ferge, hurtigbåt, bil, sykkel og adkomst.</p>
