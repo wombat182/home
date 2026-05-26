@@ -1,48 +1,42 @@
-# Wombat — site
+# Visit Dønna — turistportal
 
-Three pages plus a 404. HTML, CSS, and a small JavaScript animation on the home page.
+Enkel, rask turistside for Dønna på Helgelandskysten.
 
-## Files
+## Filer
+- `index.html` — hele siden (design, tekst og animasjoner bakt inn)
+- `donnamannen.png` — hero-bildet av Dønnamannen
 
-- `index.html` — home (animated silhouette + wordmark + nav)
-- `about.html` — company description + contact
-- `wombats.html` — wild wombat photo placeholders
-- `404.html` — graceful page for mistyped URLs
-- `style.css` — all styling
-- `wombat-logo.png` — silhouette only, transparent background, 3x resolution for retina
+VIKTIG: begge filene må ligge i SAMME mappe i repoet, ellers vises ikke bildet.
 
-## Logo structure
+## Legg ut på GitHub Pages
+1. Last opp begge filene i repoet.
+2. Settings -> Pages -> Source: "Deploy from a branch", branch `main`, mappe `/ (root)`.
+3. Hard-refresh med Cmd+Shift+R etter et par minutter.
 
-The PNG is just the wombat silhouette — no wordmark, no background. The "wombat" text on the home page is real HTML in EB Garamond. So:
+## Endre innhold
+Alt ligger i index.html. Søk etter teksten du vil bytte:
+- Drosjenummer: søk `465 55 516`
+- E-post: søk `hei@visitdonna.no` (står to steder)
+- SUP-pris: søk `Ta kontakt for pris`
+- Farger: helt øverst i <style> under :root
 
-- Only the animal moves; the wordmark stays still
-- No color mismatch possible (transparent background)
-- Crisp on retina displays (logo is 3x display size)
+## Bytte hero-bildet
+Legg et nytt bilde i mappa og kall det `donnamannen.png` (eller endre filnavnet
+i index.html der det står `donnamannen.png`). Liggende format (bredt) funker best.
 
-## Animation
+## Neste steg å vurdere
+- Ekte bilder til severdighets-kortene (kirka, Dønnesfjellet).
+- Lenker til offisielle ferjeruter (Torghatten Nord / Reis Nordland) som oppdateres.
+- Bookingløsning for SUP når forespørslene kommer (start med e-post/skjema).
+- Sjekk og oppdater åpningstider/priser jevnlig — turister mister tillit til utdatert info.
 
-Just two things now:
+## Ansvar (SUP-utleie)
+Før første utleie: tegn forsikring, lag en enkel leieavtale med ansvarsfraskrivelse,
+og gi en sikkerhetsinstruks (vest, sjekk vær/vind, ikke padle ut i fralandsvind).
 
-1. **Breathe** — gentle continuous scale pulse
-2. **Hop** — once every 35 seconds, the wombat does a quick cute hop. Slight crouch + lean back, jump up with a tilt forward, land and settle. ~1.3 seconds total. No horizontal movement.
 
-Hover pauses everything and perks up the wombat. `prefers-reduced-motion` disables all motion.
+## Oppdatering
 
-## Editing
+Denne pakken inneholder nå 10 artikkelsider i mappen `artikler/`, samt `CNAME` for donnamannen.no. Forsidens eksisterende stil er beholdt; artiklene gjenbruker samme uttrykk.
 
-- **Email**: search `teigstad@icloud.com` in `about.html`
-- **About paragraph**: edit `<p>` tags in `.content` div in `about.html`
-- **Org.nr**: search `925&nbsp;629&nbsp;634` across HTML files
-- **Partners link**: search `docs.google.com` in `index.html`
-- **Add a photo**: in `wombats.html`, replace `<div class="placeholder">photo 1</div>` with `<img src="myphoto.jpg" alt="">`
-- **Wombat size**: in `style.css`, find `#wombat-mark` and adjust `max-width` (currently 280px) or `width: 22vw`
-
-## Colors
-
-- Cream: `#F5EFE0`
-- Brown: `#3E2C1C`
-- Soft brown: `#6b5742`
-
-## Future improvements
-
-If you want a higher-quality logo, the right move is to convert the silhouette to SVG (vector) instead of PNG — then it'll be infinitely crisp at any size. Tools like Vector Magic or Adobe Illustrator's Image Trace can do this from your existing PNG.
+Artiklene er førsteutkast og bør faktasjekkes mot oppdaterte kilder før publisering, særlig fergeruter, åpningstider og praktisk besøksinformasjon.
