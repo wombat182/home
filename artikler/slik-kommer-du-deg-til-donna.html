@@ -56,6 +56,15 @@
   .nav-links a{color:#fff;text-decoration:none;font-size:.68rem;letter-spacing:.18em;
     text-transform:uppercase;transition:color .4s;text-shadow:0 1px 10px rgba(0,0,0,.55)}
   .nav-links a:hover{color:var(--bone)}
+  .nav-actions{display:flex;gap:.7rem;align-items:center;margin-left:1.2rem}
+  .nav-action{color:#fff;text-decoration:none;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;
+    border:1px solid rgba(255,255,255,.38);border-radius:999px;padding:.72rem 1rem;
+    background:rgba(10,15,18,.28);backdrop-filter:blur(10px);box-shadow:0 8px 26px rgba(0,0,0,.18);
+    text-shadow:0 1px 10px rgba(0,0,0,.55);transition:background .25s ease,border-color .25s ease,transform .25s ease}
+  .nav-action:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.7);transform:translateY(-1px)}
+  .nav-action.primary{background:rgba(255,255,255,.9);color:#0f1113;text-shadow:none;border-color:rgba(255,255,255,.9);font-weight:700}
+  .nav-action.primary:hover{background:#fff;color:#0f1113}
+
 
   /* Hero */
   .hero{position:relative;height:100vh;min-height:640px;display:flex;align-items:flex-end;
@@ -141,6 +150,8 @@
 
   @media(max-width:900px){
     .nav-links{display:none}
+    .nav-actions{display:flex;margin-left:auto;gap:.45rem}
+    .nav-action{font-size:.54rem;padding:.58rem .62rem;letter-spacing:.1em;white-space:nowrap}
     .nav-inner{padding:0 1.5rem}
     section{padding:5rem 1.5rem}
     .hero-content{padding:0 1.5rem 4rem}
@@ -174,9 +185,13 @@
       <li><a href="../turruter/">Turruter</a></li>
       <li><a href="../lei/">Lei</a></li>
       <li><a href="../bedrifter/">Bedrifter</a></li>
-      <li><a href="../planlegger/">Planlegger</a></li>
-      <li><a href="../assets/fergerute-sandnessjoen-donna-lokta-2026.pdf">Fergerute</a></li>
+      
+      
     </ul>
+    <div class="nav-actions">
+      <a class="nav-action primary" href="../planlegger/">Planlegger</a>
+      <a class="nav-action ferry" href="../assets/fergerute-sandnessjoen-donna-lokta-2026.pdf">Fergerute</a>
+    </div>
   </div>
 </nav>
 <header class="hero article-hero">
