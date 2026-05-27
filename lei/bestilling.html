@@ -51,15 +51,15 @@
   nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1.8rem 0;
     transition:transform .5s ease,background .5s ease,padding .5s ease}
   nav.scrolled{background:rgba(10,15,18,.88);backdrop-filter:blur(12px);padding:1.1rem 0;border-bottom:1px solid var(--line)}
-  .nav-inner{max-width:1280px;margin:0 auto;padding:0 3rem;display:flex;justify-content:space-between;align-items:center}
+  .nav-inner{max-width:1440px;margin:0 auto;padding:0 3rem;display:flex;justify-content:space-between;align-items:center;gap:1.2rem}
   .logo{font-family:var(--display);font-size:1.4rem;color:#fff;text-decoration:none;
     letter-spacing:.3em;text-transform:uppercase;padding-left:.3em;text-shadow:0 1px 10px rgba(0,0,0,.55)}
-  .nav-links{list-style:none;display:flex;gap:1.55rem;align-items:center}
-  .nav-links a{color:#fff;text-decoration:none;font-size:.68rem;letter-spacing:.18em;
+  .nav-links{list-style:none;display:flex;gap:1.05rem;align-items:center;flex:1;justify-content:center}
+  .nav-links a{color:#fff;text-decoration:none;font-size:.76rem;letter-spacing:.145em;
     text-transform:uppercase;transition:color .4s;text-shadow:0 1px 10px rgba(0,0,0,.55)}
   .nav-links a:hover{color:var(--bone)}
-  .nav-actions{display:flex;gap:.7rem;align-items:center;margin-left:1.2rem}
-  .nav-action{color:#fff;text-decoration:none;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;
+  .nav-actions{display:flex;gap:.7rem;align-items:center;margin-left:0;flex:0 0 auto}
+  .nav-action{color:#fff;text-decoration:none;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
     border:1px solid rgba(255,255,255,.38);border-radius:999px;padding:.72rem 1rem;
     background:rgba(10,15,18,.28);backdrop-filter:blur(10px);box-shadow:0 8px 26px rgba(0,0,0,.18);
     text-shadow:0 1px 10px rgba(0,0,0,.55);transition:background .25s ease,border-color .25s ease,transform .25s ease}
@@ -207,7 +207,7 @@
   .article-row:hover{border-color:rgba(184,153,104,.4);transform:translateY(-2px)}
   .article-row small{display:block;color:var(--gold);letter-spacing:.18em;text-transform:uppercase;font-size:.58rem;margin-bottom:.45rem}
   .article-row span{color:var(--bone);font-size:1.05rem}
-  @media(max-width:1100px){.nav-links{gap:.85rem}.nav-links a{font-size:.58rem}.nav-action{font-size:.56rem;padding:.62rem .75rem}.logo{font-size:1.05rem}}
+  @media(max-width:1220px){.nav-inner{padding:0 2rem}.nav-links{gap:.7rem}.nav-links a{font-size:.64rem;letter-spacing:.105em}.nav-action{font-size:.62rem;padding:.62rem .75rem}.logo{font-size:1.08rem}}
   @media(max-width:900px){
     nav{position:absolute;background:linear-gradient(180deg,rgba(10,15,18,.65),rgba(10,15,18,0));padding:1.1rem 0}
     nav.scrolled{position:fixed;background:rgba(10,15,18,.92)}
@@ -216,7 +216,7 @@
     .nav-links{display:flex!important;gap:.55rem;overflow-x:auto;width:100%;padding-bottom:.35rem;scrollbar-width:none}
     .nav-links::-webkit-scrollbar{display:none}
     .nav-links li{flex:0 0 auto}
-    .nav-links a{display:block;border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:.52rem .68rem;background:rgba(10,15,18,.32);font-size:.54rem;white-space:nowrap}
+    .nav-links a{display:block;border:1px solid rgba(255,255,255,.24);border-radius:999px;padding:.56rem .72rem;background:rgba(10,15,18,.38);font-size:.6rem;letter-spacing:.11em;white-space:nowrap}
     .dropdown-menu{display:none}
     .nav-actions{margin-left:0;width:100%}.nav-action{display:block;text-align:center;width:100%}
     .form-grid,.price-grid,.article-list{grid-template-columns:1fr}.calendar-grid{gap:.25rem}.cal-day{min-height:38px;font-size:.72rem}
@@ -227,7 +227,7 @@
   @media(max-width:900px){
     .nav-links{display:none}
     .nav-actions{display:flex;margin-left:auto;gap:.45rem}
-    .nav-action{font-size:.54rem;padding:.58rem .62rem;letter-spacing:.1em;white-space:nowrap}
+    .nav-action{font-size:.6rem;padding:.62rem .72rem;letter-spacing:.1em;white-space:nowrap}
     .nav-inner{padding:0 1.5rem}
     section{padding:5rem 1.5rem}
     .hero-content{padding:0 1.5rem 4rem}
@@ -259,10 +259,10 @@
       <li><a href="../overnatting/">Overnatting</a></li>
       <li><a href="../tjenester/">Tjenester</a></li>
       <li><a href="../artikler/">Lær om Dønna</a></li>
-      <li><a href="../lei/">Leie utstyr</a></li>
+      <li><a href="../lei/">Leie SUP og utstyr</a></li>
     </ul>
     <div class="nav-actions">
-      <a class="nav-action primary" href="../lei/bestilling.html">Bestill SUP</a>
+      <a class="nav-action primary" href="../lei/bestilling.html">Bestill utstyr</a>
     </div>
   </div>
 </nav>
@@ -271,7 +271,7 @@
   <div class="wrap reveal-up in">
     <p class="eyebrow">Bestilling</p>
     <h1>Bestill SUP</h1>
-    <p>Velg dato, fyll inn detaljer og send forespørsel. På GitHub Pages sendes ikke skjemaet automatisk ennå — knappen lager en ferdig SMS du kan sende til oss.</p>
+    <p>Velg dato, fyll inn detaljer og send forespørsel. Alle dager vises som ledige med mindre annet er avtalt. Skjemaet lager en ferdig e-post til oss, og du kan også ringe direkte.</p>
   </div>
 </section>
 <section>
@@ -281,11 +281,11 @@
         <p class="eyebrow">Ledighet</p>
         <h2>Velg dato</h2>
         <div class="calendar" id="availability-calendar">
-          <div class="calendar-head"><h3 id="cal-title">Kalender</h3><span style="color:var(--bone-dim);font-size:.82rem">Foreløpig kalender</span></div>
+          <div class="calendar-head"><h3 id="cal-title">Kalender</h3><span style="color:var(--bone-dim);font-size:.82rem">Alle dager ledige</span></div>
           <div class="calendar-grid" id="cal-grid"></div>
-          <div class="legend"><span><i class="green"></i>Ledig</span><span><i class="yellow"></i>Begrenset</span><span><i class="gray"></i>Opptatt / ikke satt</span></div>
+          <div class="legend"><span><i class="green"></i>Ledig</span><span><i class="gray"></i>Tidligere dato</span></div>
         </div>
-        <div class="notice">Kalenderen er en enkel front-end visning. Endelig bekreftelse skjer på SMS/telefon.</div>
+        <div class="notice">Foreløpig viser kalenderen alle fremtidige dager som ledige. Endelig bekreftelse skjer på e-post, SMS eller telefon.</div>
       </div>
       <div class="reveal-up">
         <p class="eyebrow">Forespørsel</p>
@@ -301,7 +301,8 @@
           </div>
           <div class="form-field"><label for="message">Kommentar</label><textarea id="message" name="message" placeholder="Skriv gjerne tidspunkt, levering/henting og hvem som skal bruke utstyret."></textarea></div>
           <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem">
-            <button class="btn" type="submit"><span>Send som SMS</span></button>
+            <button class="btn" type="submit"><span>Send på e-post</span></button>
+            <a class="btn" id="sms-link" href="sms:+4793864150"><span>Send SMS</span></a>
             <a class="btn" href="tel:+4793864150"><span>Ring oss</span></a>
           </div>
         </form>
@@ -323,18 +324,41 @@
   for(let d=1; d<=days; d++){
     const date=new Date(y,m,d); const iso=date.toISOString().slice(0,10); const dow=date.getDay();
     const e=document.createElement('button'); e.type='button'; e.className='cal-day'; e.textContent=d; e.dataset.date=iso;
-    if(date < new Date(today.getFullYear(),today.getMonth(),today.getDate())) e.classList.add('booked');
-    else if(dow===0 || dow===6) e.classList.add('limited');
+    // Alle fremtidige datoer er ledige som standard. Legg datoer i unavailableDates senere ved behov.
+    const unavailableDates = [];
+    if(date < new Date(today.getFullYear(),today.getMonth(),today.getDate()) || unavailableDates.includes(iso)) e.classList.add('booked');
     else e.classList.add('available');
-    e.addEventListener('click',()=>{ if(e.classList.contains('booked')) return; document.querySelectorAll('.cal-day.selected').forEach(x=>x.classList.remove('selected')); e.classList.add('selected'); document.getElementById('date').value=iso; });
+    e.addEventListener('click',()=>{ if(e.classList.contains('booked')) return; document.querySelectorAll('.cal-day.selected').forEach(x=>x.classList.remove('selected')); e.classList.add('selected'); document.getElementById('date').value=iso; if(typeof updateSmsLink==='function') updateSmsLink(); });
     grid.appendChild(e);
   }
   const form=document.getElementById('booking-form');
+  const buildPlainMessage=()=>{
+    const get=id=>document.getElementById(id).value.trim();
+    return `Hei! Jeg vil bestille SUP på Dønna.
+
+Navn: ${get('name')}
+Telefon: ${get('phone')}
+Dato: ${get('date')}
+Varighet: ${get('days')}
+Antall SUP: ${get('boards')}
+Sted: ${get('place')}
+Kommentar: ${get('message')}`;
+  };
+  const updateSmsLink=()=>{
+    const sms=document.getElementById('sms-link');
+    if(!sms) return;
+    sms.href=`sms:+4793864150?&body=${encodeURIComponent(buildPlainMessage())}`;
+  };
+  ['name','phone','date','days','boards','place','message'].forEach(id=>{
+    const el=document.getElementById(id);
+    if(el) el.addEventListener('input', updateSmsLink);
+  });
+  updateSmsLink();
   form.addEventListener('submit', function(ev){
     ev.preventDefault();
-    const get=id=>document.getElementById(id).value.trim();
-    const body=`Hei! Jeg vil bestille SUP på Dønna.%0A%0ANavn: ${encodeURIComponent(get('name'))}%0ATelefon: ${encodeURIComponent(get('phone'))}%0ADato: ${encodeURIComponent(get('date'))}%0AVarighet: ${encodeURIComponent(get('days'))}%0AAntall SUP: ${encodeURIComponent(get('boards'))}%0ASted: ${encodeURIComponent(get('place'))}%0AKommentar: ${encodeURIComponent(get('message'))}`;
-    window.location.href=`sms:+4793864150?&body=${body}`;
+    const subject=encodeURIComponent('SUP-bestilling på Dønna');
+    const body=encodeURIComponent(buildPlainMessage());
+    window.location.href=`mailto:teigstad@icloud.com,natped@hotmail.no?subject=${subject}&body=${body}`;
   });
 })();
 </script>

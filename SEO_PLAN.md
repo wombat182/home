@@ -89,3 +89,19 @@ Alle artikler bør lenke videre til minst tre ting:
 - Bruk norske søkeord naturlig i H2 og første avsnitt.
 - Legg til schema.org senere: LocalBusiness, TouristAttraction, FAQPage, Service.
 - Lag sitemap.xml når domenet kobles på.
+
+
+## Nye målrettede SEO-sider lagt til
+
+- SUP på Dønna: `artikler/sup-donna.html`
+- Kajakk på Dønna: `artikler/kajakk-donna.html`
+- Dønna butikk: `artikler/donna-butikk.html`
+- Dønna taxi: `artikler/donna-taxi.html`
+- Solnedgang Dønna: `artikler/solnedgang-donna.html`
+- Dønna sykkel: `artikler/donna-sykkel.html`
+- Dønna overnatting: `artikler/donna-overnatting-guide.html`
+- Dønnamannen topptur: `artikler/donnamannen-topptur.html`
+- Breivika Dønna: `artikler/breivika-donna.html`
+- Fiske Dønna: `artikler/fiske-donna.html`
+- Bøåsen Dønna: `artikler/boasen-donna.html`
+- SUP-kurs Dønna: `artikler/sup-kurs-donna.html`
