@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lei på Dønna — Dønna</title>
-<meta name="description" content="Lei SUP, kajakk, telt og etter hvert alt mulig annet som gjør Dønna enklere å oppleve.">
+<title>Lei SUP på Dønna — 299 per dag</title>
+<meta name="description" content="Lei SUP-brett på Dønna. 299 per dag eller 499 for to dager. SUP, padleåre og flytevest inkludert.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
@@ -165,6 +166,61 @@
   .brain-list li{border-bottom:1px solid var(--line);padding:.75rem 0;color:var(--bone-dim);font-size:.92rem}
   .brain-list li:last-child{border-bottom:none}
   .brain-list b{color:var(--bone);font-weight:400}
+
+
+  /* Navigation dropdown + practical utilities */
+  .nav-dropdown{position:relative}
+  .dropdown-menu{position:absolute;top:140%;left:50%;transform:translateX(-50%) translateY(8px);min-width:230px;
+    background:rgba(10,15,18,.96);border:1px solid var(--line);padding:.75rem;display:grid;gap:.2rem;
+    opacity:0;pointer-events:none;transition:opacity .25s ease,transform .25s ease;box-shadow:0 24px 60px rgba(0,0,0,.35);backdrop-filter:blur(14px)}
+  .dropdown-menu a{display:block;padding:.75rem .85rem;letter-spacing:.12em!important;text-shadow:none!important;color:var(--bone)!important}
+  .dropdown-menu a:hover{background:rgba(184,153,104,.08);color:var(--gold)!important;text-decoration:none}
+  .nav-dropdown:hover .dropdown-menu,.nav-dropdown:focus-within .dropdown-menu{opacity:1;pointer-events:auto;transform:translateX(-50%) translateY(0)}
+  .pill-list{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:1.2rem}
+  .pill{border:1px solid var(--line);padding:.55rem .85rem;border-radius:999px;color:var(--bone-dim);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+  .price-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem;margin:2rem 0}
+  .price-box{border:1px solid rgba(184,153,104,.35);padding:1.6rem;background:rgba(184,153,104,.045)}
+  .price-box strong{font-size:2rem;color:var(--bone);display:block;letter-spacing:.02em}
+  .price-box span{font-size:.72rem;text-transform:uppercase;letter-spacing:.18em;color:var(--gold)}
+  .form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+  .form-field{display:flex;flex-direction:column;gap:.45rem;margin-bottom:1rem}
+  .form-field label{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+  input,select,textarea{width:100%;background:rgba(231,227,216,.045);border:1px solid var(--line);color:var(--bone);padding:1rem;font:inherit;border-radius:0;outline:none}
+  input:focus,select:focus,textarea:focus{border-color:rgba(184,153,104,.55)}
+  textarea{min-height:130px;resize:vertical}
+  .calendar{border:1px solid var(--line);padding:1.5rem;background:rgba(255,255,255,.015)}
+  .calendar-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;gap:1rem}
+  .calendar-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:.35rem}
+  .cal-day,.cal-name{min-height:42px;border:1px solid rgba(231,227,216,.08);display:flex;align-items:center;justify-content:center;font-size:.78rem;color:var(--bone-dim)}
+  .cal-name{min-height:28px;border:none;color:var(--gold);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase}
+  .cal-day.available{background:rgba(84,143,104,.16);color:var(--bone);border-color:rgba(84,143,104,.28);cursor:pointer}
+  .cal-day.limited{background:rgba(184,153,104,.14);color:var(--bone);border-color:rgba(184,153,104,.28);cursor:pointer}
+  .cal-day.booked{background:rgba(255,255,255,.035);opacity:.45;text-decoration:line-through}
+  .cal-day.selected{outline:2px solid var(--gold);outline-offset:2px}
+  .legend{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1rem;color:var(--bone-dim);font-size:.78rem}
+  .legend i{display:inline-block;width:.65rem;height:.65rem;border-radius:999px;margin-right:.35rem;vertical-align:-.05rem}
+  .green{background:rgba(84,143,104,.5)}.yellow{background:rgba(184,153,104,.55)}.gray{background:rgba(255,255,255,.25)}
+  .notice{border:1px solid rgba(184,153,104,.28);background:rgba(184,153,104,.045);padding:1rem;color:var(--pale);font-size:.9rem;margin-top:1rem}
+  .article-list{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+  .article-row{border:1px solid var(--line);padding:1.2rem;text-decoration:none;color:inherit;transition:border-color .25s ease,transform .25s ease}
+  .article-row:hover{border-color:rgba(184,153,104,.4);transform:translateY(-2px)}
+  .article-row small{display:block;color:var(--gold);letter-spacing:.18em;text-transform:uppercase;font-size:.58rem;margin-bottom:.45rem}
+  .article-row span{color:var(--bone);font-size:1.05rem}
+  @media(max-width:1100px){.nav-links{gap:.85rem}.nav-links a{font-size:.58rem}.nav-action{font-size:.56rem;padding:.62rem .75rem}.logo{font-size:1.05rem}}
+  @media(max-width:900px){
+    nav{position:absolute;background:linear-gradient(180deg,rgba(10,15,18,.65),rgba(10,15,18,0));padding:1.1rem 0}
+    nav.scrolled{position:fixed;background:rgba(10,15,18,.92)}
+    .nav-inner{align-items:flex-start;gap:.8rem;flex-wrap:wrap}
+    .logo{width:100%}
+    .nav-links{display:flex!important;gap:.55rem;overflow-x:auto;width:100%;padding-bottom:.35rem;scrollbar-width:none}
+    .nav-links::-webkit-scrollbar{display:none}
+    .nav-links li{flex:0 0 auto}
+    .nav-links a{display:block;border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:.52rem .68rem;background:rgba(10,15,18,.32);font-size:.54rem;white-space:nowrap}
+    .dropdown-menu{display:none}
+    .nav-actions{margin-left:0;width:100%}.nav-action{display:block;text-align:center;width:100%}
+    .form-grid,.price-grid,.article-list{grid-template-columns:1fr}.calendar-grid{gap:.25rem}.cal-day{min-height:38px;font-size:.72rem}
+  }
+
   @media(max-width:900px){.page-hero{padding:9rem 1.5rem 4rem}.brain-list{grid-template-columns:1fr}}
 
   @media(max-width:900px){
@@ -188,96 +244,72 @@
   <div class="nav-inner">
     <a href="../index.html" class="logo">Dønna</a>
     <ul class="nav-links">
-      <li><a href="../opplev/">Opplev</a></li>
-      <li><a href="../turruter/">Turruter</a></li>
-      <li><a href="../lei/">Lei</a></li>
-      <li><a href="../bedrifter/">Bedrifter</a></li>
-      
-      
+      <li><a href="../assets/fergerute-sandnessjoen-donna-lokta-2026.pdf">Fergerute</a></li>
+      <li><a href="../planlegger/">Planlegger</a></li>
+      <li class="nav-dropdown"><a href="../opplev/">Ting å gjøre</a>
+        <div class="dropdown-menu">
+          <a href="../turruter/">Turer</a>
+          <a href="../bedrifter/mat-og-drikke.html">Mat &amp; drikke</a>
+          <a href="../opplev/">Attraksjoner</a>
+          <a href="../artikler/badeplasser-pa-donna.html">Badesteder</a>
+          <a href="../artikler/havfiske-pa-donna.html">Fiske</a>
+        </div>
+      </li>
+      <li><a href="../overnatting/">Overnatting</a></li>
+      <li><a href="../tjenester/">Tjenester</a></li>
+      <li><a href="../artikler/">Lær om Dønna</a></li>
+      <li><a href="../lei/">Leie utstyr</a></li>
     </ul>
     <div class="nav-actions">
-      <a class="nav-action primary" href="../planlegger/">Planlegger</a>
-      <a class="nav-action ferry" href="../assets/fergerute-sandnessjoen-donna-lokta-2026.pdf">Fergerute</a>
+      <a class="nav-action primary" href="../lei/bestilling.html">Bestill SUP</a>
     </div>
   </div>
 </nav>
-<header class="page-hero">
-  <div class="wrap reveal-up in">
-    <p class="eyebrow">Dønna</p>
-    <h1>Lei på Dønna</h1>
-    <p>Lei SUP, kajakk, telt og etter hvert alt mulig annet som gjør Dønna enklere å oppleve.</p>
-  </div>
-</header>
-<section><div class="wrap"><div class="sec-head reveal-up"><p class="eyebrow">Lei på Dønna</p><h2>Utstyr, transport, steder og rare nyttige ting</h2><p class="lead">Her kan kategorien vokse langt forbi SUP. Alt som gjør et opphold enklere kan i prinsippet leies: fra padlebrett og telt til bil, båt, elsykkel, campingvogn og hus.</p></div><div class="cards" style="margin-top:2.5rem"><a class="card reveal-up" href="tel:+4793864150" style="text-decoration:none;color:inherit"><span class="tag">Tilgjengelig først</span>
-        <h3>SUP-brett</h3>
-        <p>Stand up paddle for rolige dager på vannet. Ring for tilgjengelighet.</p>
-        
-        <span class="section-link">Åpne</span></a><a class="card reveal-up" href="tel:+4793864150" style="text-decoration:none;color:inherit"><span class="tag">Tilgjengelig først</span>
-        <h3>Kajakk</h3>
-        <p>For deg som vil tett på skjærgården. Krever værvurdering og erfaring.</p>
-        
-        <span class="section-link">Åpne</span></a><a class="card reveal-up" href="tel:+4793864150" style="text-decoration:none;color:inherit"><span class="tag">Tilgjengelig først</span>
-        <h3>Telt</h3>
-        <p>Enkel start for folk som vil sove ute eller øyhoppe med lett utstyr.</p>
-        
-        <span class="section-link">Åpne</span></a></div><div class="cards" style="margin-top:2.5rem"><div class="card reveal-up"><span class="tag">Kommer snart</span>
-        <h3>Sykkel og elsykkel</h3>
-        <p>Vanlig sykkel, elsykkel, hjelm, sykkelvogn og vesker.</p>
-        
-        <span class="section-link">Kommer snart</span></div><div class="card reveal-up"><span class="tag">Kommer snart</span>
-        <h3>Båt og sjø</h3>
-        <p>Småbåt, båt med skipper, fiskestenger, redningsvester og båtplass.</p>
-        
-        <span class="section-link">Kommer snart</span></div><div class="card reveal-up"><span class="tag">Kommer snart</span>
-        <h3>Friluft og camping</h3>
-        <p>Lavvo, hengekøye, sovepose, liggeunderlag, primus og tursekk.</p>
-        
-        <span class="section-link">Kommer snart</span></div></div><div class="cards" style="margin-top:2.5rem"><div class="card reveal-up"><span class="tag">Kommer snart</span>
-        <h3>Bil og transport</h3>
-        <p>Bil, varebil, pickup, tilhenger, sykkelstativ og transport med sjåfør.</p>
-        
-        <span class="section-link">Kommer snart</span></div><div class="card reveal-up"><span class="tag">Kommer snart</span>
-        <h3>Hus, hytte og steder</h3>
-        <p>Hus, hytte, rom, naust, rorbu, teltplass, bobilplass og campingvogn.</p>
-        
-        <span class="section-link">Kommer snart</span></div><div class="card reveal-up"><span class="tag">Kommer snart</span>
-        <h3>Familieutstyr</h3>
-        <p>Barnesete, reiseseng, bæremeis, sykkelvogn, redningsvest barn og strandutstyr.</p>
-        
-        <span class="section-link">Kommer snart</span></div></div><div class="cards" style="margin-top:2.5rem"><div class="card reveal-up"><span class="tag">Kommer snart</span>
-        <h3>Verktøy og praktisk utstyr</h3>
-        <p>Drill, sag, stige, aggregat, høytrykkspyler, partytelt, bord og stoler.</p>
-        
-        <span class="section-link">Kommer snart</span></div><div class="card reveal-up"><span class="tag">Kommer snart</span>
-        <h3>Foto og innhold</h3>
-        <p>GoPro, kamera, stativ, kikkert, vanntett kamerahus og fotopakke.</p>
-        
-        <span class="section-link">Kommer snart</span></div><div class="card reveal-up"><span class="tag">Kommer snart</span>
-        <h3>Mat og uteopplevelse</h3>
-        <p>Grill, bålpanne, kjøleboks, kaffekjele, krabbekoker og piknikkurv.</p>
-        
-        <span class="section-link">Kommer snart</span></div></div></div></section><section class="hike"><div class="wrap"><div class="sec-head reveal-up"><p class="eyebrow">Muligheten</p><h2>Folk på Dønna har ting. Turister mangler ting.</h2><p class="lead">Dere kan bli mellomleddet. Start med det dere eier selv, og bygg senere en enkel lokal markedsplass der folk og bedrifter kan legge ut ting til leie.</p></div><div class="brain-list reveal-up"><ul><li><b>Vannsport:</b> SUP, kajakk, kano, våtdrakt, tørrbag, flytevest.</li><li><b>Transport:</b> sykkel, elsykkel, bil, varebil, tilhenger, sykkelvogn.</li><li><b>Friluft:</b> telt, lavvo, hengekøye, sovepose, primus, tursekk.</li><li><b>Sjø:</b> fiskestenger, småbåt, båt med skipper, redningsvester, båtplass.</li></ul><ul><li><b>Steder:</b> hus, hytte, rom, naust, rorbu, bobilplass, teltplass.</li><li><b>Familie:</b> barnesete, reiseseng, bæremeis, redningsvest, strandutstyr.</li><li><b>Praktisk:</b> verktøy, partytelt, bord, stoler, aggregat, høytrykkspyler.</li><li><b>Pakker:</b> SUP-pakke, sykkelpakke, fiskepakke, familiepakke, festivalpakke.</li></ul></div></div></section>
 
+<section class="page-hero">
+  <div class="wrap reveal-up in">
+    <p class="eyebrow">Leie utstyr</p>
+    <h1>Lei SUP på Dønna</h1>
+    <p>Per nå leier vi ut SUP-brett. Vi leverer etter avtale når det passer, og vi sier heller nei enn å sende folk ut i dårlige forhold.</p>
+    <div class="price-grid" style="max-width:520px">
+      <div class="price-box"><strong>299,-</strong><span>per dag</span></div>
+      <div class="price-box"><strong>499,-</strong><span>for to dager</span></div>
+    </div>
+    <a class="btn" href="bestilling.html"><span>Legg inn bestilling</span></a>
+  </div>
+</section>
 <section>
   <div class="wrap">
-    <div class="sec-head reveal-up">
-      <p class="eyebrow">Først ut</p>
-      <h2>Topp tre å leie</h2>
-      <p class="lead">Vi starter med ting som er enkle å forstå, lette å bruke og passer Dønna: SUP, telt og sykkel. Hengekøye kommer trolig rett etter.</p>
-    </div>
-    <div class="cards">
-      <div class="card reveal-up"><span class="tag">Hav</span><h3>SUP</h3><p>For rolige dager på sjøen. Flytevest inkludert. Utleie etter avtale og værforhold.</p><span class="section-link">Ring 938 64 150</span></div>
-      <div class="card reveal-up"><span class="tag">Overnatting</span><h3>Telt</h3><p>For deg som vil sove ute, reise lett eller forlenge turen spontant.</p><span class="section-link">Kommer snart</span></div>
-      <div class="card reveal-up"><span class="tag">Transport</span><h3>Sykkel</h3><p>Dønna passer godt for rolige landeveier, korte stopp og øyopplevelser uten bil.</p><span class="section-link">Kommer snart</span></div>
+    <div class="hike-grid">
+      <div class="reveal-up">
+        <p class="eyebrow">Inkludert</p>
+        <h2>Enkelt, rolig og fleksibelt</h2>
+        <div class="text-block">
+          <p><strong>SUP-brett, padleåre og flytevest</strong> er inkludert. Vi avtaler tid og sted på Dønna.</p>
+          <p>SUP passer best på rolige dager med lite vind. Ved fralandsvind, mye vind eller utrygge forhold anbefaler vi å vente eller velge en annen opplevelse.</p>
+        </div>
+      </div>
+      <div class="info-block reveal-up">
+        <h3>Bestilling</h3>
+        <div class="info-row"><span>Telefon</span><a href="tel:+4793864150">938 64 150</a></div>
+        <div class="info-row"><span>Pris</span><span>299,- dag / 499,- to dager</span></div>
+        <div class="info-row"><span>Utstyr</span><span>SUP, åre, flytevest</span></div>
+        <div class="info-row"><span>Viktig</span><span>Utleie etter værforhold</span></div>
+        <a class="btn" href="bestilling.html" style="margin-top:1.5rem"><span>Åpne skjema</span></a>
+      </div>
     </div>
   </div>
 </section>
-<footer>
-  <a href="../index.html" class="logo">Dønna</a>
-  <p>Din lokale guide til Dønna på Helgelandskysten</p>
-  <p>© 2026</p>
-  <p class="fine-print">Vi er ikke ansvarlige for endringer i ruter, åpningstider eller priser hos tredjeparter — sjekk alltid offisielle kilder før avreise. Fjellturer og sjøaktiviteter skjer på eget ansvar; vurder vær, sikt og egen erfaring.</p>
-</footer>
+<section class="hike">
+  <div class="wrap">
+    <div class="sec-head reveal-up"><p class="eyebrow">Kommer senere</p><h2>Telt, sykkel og hengekøye</h2><p class="lead">Dette er de neste naturlige produktene, men vi starter med SUP først for å holde kvaliteten og logistikken enkel.</p></div>
+    <div class="cards">
+      <div class="card"><span class="tag">Kommer snart</span><h3>Telt</h3><p>For rolige netter ute på Dønna når vi har funnet riktig pakke og rutine for utlevering.</p></div>
+      <div class="card"><span class="tag">Kommer snart</span><h3>Sykkel</h3><p>Dønna passer godt for sykkel. Vi ser på løsninger for vanlig sykkel og kanskje elsykkel.</p></div>
+      <div class="card"><span class="tag">Kommer snart</span><h3>Hengekøye</h3><p>Lavterskel friluftsliv for folk som vil være nær naturen uten for mye utstyr.</p></div>
+    </div>
+  </div>
+</section>
 
 <script>
   const obs = new IntersectionObserver((entries)=>{

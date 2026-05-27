@@ -17,3 +17,6 @@ Ingen `CNAME` er inkludert. Siden peker derfor ikke til eget domene ennå.
 
 
 Oppdatert: v5 har forbedret turplanlegger med natur-, vær-, vind-, transport- og utstyrslogikk. Ingen CNAME.
+
+
+Oppdatert: Pakken inneholder nå 40 informasjonsartikler om Dønna.
